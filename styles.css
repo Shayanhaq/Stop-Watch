@@ -1,0 +1,113 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    /* display: flex; */
+    justify-content: ;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #4efa1a, #28096e);
+    padding: 20px;
+    box-sizing: border-box;
+   padding: 231px;
+}
+
+/* Stopwatch Display */
+#stopwatch {
+    font-size: 85px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#a1{
+    text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+align-self: center;
+}
+
+/* Button Styling */
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    
+}
+
+#start-button {
+    background-color: #0d2c01;
+    color: white;
+}
+
+#start-button:hover {
+    background-color: #0e3d18;
+}
+
+#stop-button {
+    background-color: #790511;
+    color: white;
+}
+
+#stop-button:hover {
+    background-color: #4e070e;
+}
+
+#reset-button {
+    background-color: #d8e706b9;
+    color: white;
+}
+
+#reset-button:hover {
+    background-color: #dce000b6;
+}
+
+/* Button Press Animation */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Responsive Design */
+
+/* For small screens (up to 768px) */
+@media (max-width: 768px) {
+    #stopwatch {
+        font-size: 60px;  /* Reduce the size of the time display */
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px 25px;
+        margin: 8px;  /* Smaller margin */
+    }
+}
+
+/* For very small screens (up to 480px) */
+@media (max-width: 480px) {
+    #stopwatch {
+        font-size: 45px;  /* Further reduce the size of the time display */
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+        margin: 5px;  /* Even smaller margins */
+    }
+}
+
+/* For extra-small screens (up to 360px) */
+@media (max-width: 360px) {
+    #stopwatch {
+        font-size: 35px;  /* Smallest font size for tiny screens */
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}
